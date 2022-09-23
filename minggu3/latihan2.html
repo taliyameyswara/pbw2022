@@ -4,7 +4,7 @@
 		<title>Belajar HTML</title>
 	</head>
 
-	<body style="background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000');">
+	<body style="background-image: url('https://c4.wallpaperflare.com/wallpaper/773/464/960/texture-stripes-lines-background-wallpaper-preview.jpg');">
 <!--Contoh comment-->
 <!--Contoh html attributes-->
 	<h1 align="center">HyperText Markup Language</h1>
@@ -66,9 +66,7 @@
 
 <!--Contoh Image-->
 			<h1>Image</h1>
-		<img src="imgme.PNG" alt="Foto saya"title="Contoh Image"width="200px">
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkSuoh-NuXB5YVxaR8GuilQp5rNXRJowShw&usqp=CAU"
-		alt="kucing dr web" width="200px"
+		<img src="https://drive.google.com/uc?export=view&id=1kcBtsD0ZgQTn85_m4wNUK7CY2uOXhdk2" alt="Foto saya"title="Contoh Image"width="200px">
 
 <!--Contoh List-->
 		<h1>List</h1>
@@ -156,5 +154,55 @@
 				<td>H.5.7</td>
 			</tr>
 		</table>
+
+	<h1>Multimedia HTML</h1>
+		<h2>Video</h2>
+		<!--Button untuk video-->
+			<button onclick="playPause()">Play/Pause</button>
+			<button onclick="durationVid()" type="button">Video Duration</button>
+		<br>
+		<!--Loop Video-->
+		<video width="300" id="Video">
+			<source src="https://drive.google.com/uc?export=view&id=1a3_a24D9wb9oiPQ-QVoWIHObQIvI1N1-" 
+			alt="cat" type="video/mp4"></source>
+		</video>
+		<br>
+			<button onclick="enableControls()" type="button">Enable controls</button>
+			<button onclick="disableControls()" type="button">Disable controls</button>
+			<button onclick="checkControls()" type="button">Check controls status</button>
+		<script>
+			var vid = document.getElementById("Video");
+		
+			function playPause() { 
+ 			 if (vid.paused) 
+  				  vid.play(); 
+ 			 else 
+   				 vid.pause(); 
+			} 
+			
+			function durationVid() { 
+				alert(vid.duration);
+			} 
+			
+			function enableControls() { 
+			vid.controls = true;
+			vid.load();
+			} 
+		
+			function disableControls() { 
+			vid.controls = false;
+			vid.load();
+			} 
+		
+			function checkControls() { 
+			alert(vid.controls);
+			} 
+			
+			function playVid() {
+				vid.play();
+				vid.loop = true;
+			}
+		</script>
+
 	</body>
 </html>
