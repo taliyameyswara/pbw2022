@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taliya Meyswara's Portofolio Website">
+    <meta name="keywords" content="Portofolio Taliya Meyswara"> 
+    <meta name="author" content="Taliya Meyswara">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Trivia - Taliya Meyswara</title>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <!--Style-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <style>
+            body{
+                background-color: rgb(235,235,235);background: linear-gradient(180deg, rgba(235,235,235,1) 41%, rgb(230, 143, 30) 100%);
+                position: relative;
+                min-height: 100vh;
+            }
+        </style>
+</head>
+
+<body>
+       
+    <nav>
+        <div class="menu"></div>
+            <ul>
+                <a href="home.html">
+                    <i class='bx bxs-home'></i>
+                        Home
+                </a>
+            </ul>
+            <ul>
+                <a href="about.html">
+                    <i class='bx bxs-user-detail'></i>
+                        About
+                </a>
+                </ul>
+            <ul>
+                <a href="schedule.html">
+                    <i class='bx bxs-detail'></i>
+                    Schedule
+                </a>
+            </ul>
+            <ul>
+                <a href="trivia.html">
+                    <i class='bx bxs-game'></i>
+                    Trivia
+                </a>
+            </ul>
+                <br><br>
+            <ul>
+                <a href="messages.html">
+                    <i class='bx bxs-envelope' ></i>
+                    Messages
+                </a>
+            </ul>
+            <ul>
+                <a href="https://github.com/taliyameyswara" target="_blank">
+                    <i class='bx bxl-github' width="50px"></i>
+                    Github
+                </a>
+            </ul>
+            <ul>
+                <a href="https://wa.me/087827776565" target="_blank">
+                    <i class='bx bxs-chat'></i>
+                    Whatsapp
+                </a>
+            </ul>
+            <ul>
+                <a href="https://instagram.com/taliyams" target="_blank">
+                    <i class='bx bxl-instagram'></i>
+                    Instagram
+                </a>
+            </ul>
+            </nav>
+        </div>
+        
+            <div class="titlemes">
+                <h1><b>Send me messages!</b></h1>
+            </div>
+            <div class="messages">
+                <form name="messages" action="messages.php" method="post">
+                    <input type="text" name="name" placeholder="Input your name...">
+                    <input type="email" name="email" placeholder="Email adress...">
+                    <textarea name="messages" id="m" placeholder="Type your messages.."></textarea>
+                    <button type="submit">Submit Messages</button>
+                </form>
+            </div>
+    <footer style="text-align: center ;">
+        <p>Made with &hearts; using HTML and CSS and icons from <i class='bx bxs-package'></i>boxicons</p>
+    </footer>
+</body>
+</html>

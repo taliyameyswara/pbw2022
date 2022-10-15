@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu";
+}
+body{
+    background: linear-gradient(180deg, rgba(141,83,6,1) 23%, rgba(240,158,51,1) 100%);
+    position: relative;
+    min-height: 100vh;
+}
+nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 180px;
+    background: #8d5306;
+    padding: 6px 14px;
+}
+nav menu{
+    position:absolute;
+    color: #fff;
+    left: 90%;
+    top: 6px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-50%);
+}
+nav ul{
+    margin-top: 20px; 
+    height: 50px;  
+}
+nav ul a:hover {
+    color:rgb(240, 214, 99)
+}
+
+nav ul a:visited {
+    background-color: #fff;
+}
+
+nav ul a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4 ease;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+nav ul a i{
+    width: 50px;
+}
+
+header figure{
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+
+header article{
+    color: #fff;
+    position: absolute;
+    left: 730px;
+    top: 240px; 
+}
+
+
+
+.about {
+    position: absolute;
+    left: 250px;
+    top: 35px;
+}
+
+.about .desc {
+    font-size:15px;
+    line-height: 25px;
+    position: relative;
+    left: 250px;
+    bottom: 38px;
+}
+
+.about .who {
+    position: relative;
+    left: 50px;
+    
+}
+
+.about .hardskill{
+    position: relative;
+    left: 58px;
+}
+
+.about .softskill{
+    position: relative;
+    left: 65px;
+}
+
+.about .experience{
+    position: relative;
+    left: 35px;
+}
+
+.about .interest{
+    position: relative;
+    left: 85px;
+}
+
+details{
+    cursor: pointer;
+}
+summary:hover{
+    color: #8d5306;
+}
+
+.programming .col {
+    font-size: large;
+    background-color: rgb(206, 129, 42);
+    margin-left: 15px;
+    margin-top: 5px;
+    text-align: center;
+    width: 85px;
+    height: 50x;
+    border-radius: 8px;
+    box-sizing: border-box
+}
+.programming .col:hover{
+    background-color: rgb(155, 128, 98);
+    }
+
+.microsoft .col {
+    font-size: medium;
+    background-color: rgb(206, 129, 42);
+    margin-left: 15px;
+    margin-top: 5px;
+    text-align: center;
+    width: 97px;
+    height: 50x;
+    border-radius: 8px;
+    box-sizing: border-box
+}
+    
+.microsoft .col:hover{
+    background-color: rgb(155, 128, 98);
+}
+
+.adobe .col {
+    font-size: medium;
+    background-color: rgb(206, 129, 42);
+    margin-left: 15px;
+    margin-top: 5px;
+    text-align: center;
+    width: 97px;
+    height: 50x;
+    border-radius: 8px;
+    box-sizing: border-box
+}
+    
+.adobe .col:hover{
+    background-color: rgb(155, 128, 98);
+}
+
+.dir .col{
+        margin-left: 15px;
+    }
+
+.cre .col{
+    margin-left: 15px;
+}
+.title{
+    text-align: center;
+    margin-top: 2%;
+    margin-left:12%;
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.triviatitle{
+    text-align: center;
+    margin-top: 2%;
+    margin-left:12%;
+    font-size: 30px;
+    line-height: 50px;
+    color: rgb(99, 58, 4);
+}
+.triviatitle p{
+    font-size: 15px;
+}
+table {
+    position:relative;
+    margin-top: 2%;
+    margin-left: 0%;
+    left: 27%;
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow:hidden;
+    box-shadow: 0 2px 12px rgb(39, 26, 10);
+    background: #fff;
+    text-align: center;
+}
+
+th,td{
+    padding: 12px 15px;
+}
+
+th{
+    background: #553911;
+    color: #fff;
+}
+tr:nth-child(odd){
+    background-color:rgb(233, 231, 229);
+}
+
+.subhead{
+    text-align: left;
+    margin-top: 1%;
+    margin-left:18%;
+    font-size: 15px;
+    line-height: 50px;
+    color: rgb(99, 58, 4);
+}
+
+.subhead .content{
+    position: relative;
+    text-align: justify;
+    line-height: 30px;
+    width:80%;
+}
+
+.subhead .content video{
+    width: 40%;
+}
+
+.titlemes{
+    text-align: center;
+    margin-top: 2%;
+    margin-left:12%;
+    font-size: 20px;
+    line-height: 50px;
+    color: rgb(99, 58, 4);
+}
+
+.messages{
+    top: 15%;
+    left:18%;
+    position: absolute;
+    width: 500px;
+}
+
+.messages input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgb(39, 26, 10);
+}
+
+.messages textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgb(39, 26, 10);
+}
+
+.messages button{
+    border: 0;
+    padding: 10px 30px;
+    background: #a05f0b;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgb(39, 26, 10);
+}
+
+.messages button:hover{
+    background: #e28f23;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+    background-color:#8d5306;
+    color: white;
+    text-align: center;
+}
