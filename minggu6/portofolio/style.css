@@ -25,10 +25,10 @@ nav menu{
     top: 6px;
     font-size: 20px;
     text-align: center;
-    line-height: 50px;
     transform: translate(-50%);
 }
-nav ul{
+nav ul li{
+    list-style: none;
     margin-top: 20px; 
     height: 50px;  
 }
@@ -170,6 +170,10 @@ summary:hover{
 .cre .col{
     margin-left: 15px;
 }
+
+.desc ul li {
+    margin-left: 15px;
+}
 .title{
     text-align: center;
     margin-top: 2%;
@@ -235,6 +239,11 @@ tr:nth-child(odd){
 
 .subhead .content video{
     width: 40%;
+}
+
+iframe{
+    width: 600px;
+    height: 300px;
 }
 
 .titlemes{
