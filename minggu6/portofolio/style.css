@@ -255,7 +255,7 @@ iframe{
     color: rgb(99, 58, 4);
 }
 
-.messages{
+section .messages{
     top: 15%;
     left:18%;
     position: absolute;
