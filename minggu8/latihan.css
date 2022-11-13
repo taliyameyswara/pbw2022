@@ -1,0 +1,275 @@
+/* 
+padding: top right bottom left
+all
+top bottom + left right 
+top + left right + bottom
+top right bottom left
+*/
+
+section .container {
+  margin: 2em;
+  border: 1.9px solid #999;
+  padding: 1em 2rem;
+}
+
+.header {
+  text-align: center;
+  line-height: 9px;
+}
+
+.header p {
+  color: #666;
+}
+
+/* content */
+.title {
+  font-weight: bolder;
+}
+
+.color span {
+  color: palevioletred;
+}
+
+.font-family span {
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.font-size .px span {
+  font-size: 20px;
+}
+.font-size .percent span {
+  font-size: 100%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+.oblique2 {
+  font-style: oblique 10deg;
+}
+
+.font-weight .normal span {
+  font-weight: normal;
+}
+.font-weight .bold span {
+  font-weight: bold;
+}
+.font-weight .lighter span {
+  font-weight: lighter;
+}
+.font-weight .bolder span {
+  font-weight: bolder;
+}
+.font-weight .number span {
+  font-weight: 900;
+}
+
+.letters-spacing .normal {
+  letter-spacing: normal;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.wide {
+  letter-spacing: 0.4em;
+}
+.wider {
+  letter-spacing: 1em;
+}
+.tight {
+  letter-spacing: -0.05em;
+}
+.px-wide {
+  letter-spacing: 6px;
+}
+
+.line-height .text {
+  padding-left: 20px;
+  line-height: 32px;
+}
+
+.under {
+  text-decoration: underline red;
+}
+
+.over {
+  text-decoration: wavy overline lime;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.plain {
+  text-decoration: none;
+}
+
+.underover {
+  text-decoration: dashed underline overline;
+}
+
+.thick {
+  text-decoration: solid underline purple 4px;
+}
+
+.blink {
+  text-decoration: blink;
+}
+
+.none {
+  text-transform: none;
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.full-width {
+  text-transform: full-width;
+}
+
+.text-shadow span {
+  text-shadow: rgb(204, 122, 236) 0 -1px;
+}
+
+.text-shadow h3 {
+  text-shadow: 1px 1px 1px violet, 2px 2px 1px violet;
+  font-size: 3em;
+}
+
+.indent {
+  text-indent: 2em;
+}
+
+.box {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 200px;
+  border: 1px solid;
+  padding: 2px 5px;
+  text-overflow: ellipsis;
+}
+
+.example-text h1 {
+  font-size: 3em;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px rgb(6, 77, 77), 2px 2px 1px rgb(18, 85, 85);
+  text-align: center;
+}
+
+.example-text h1 + p {
+  font-weight: bold;
+}
+
+.example-text p {
+  color: rgb(6, 77, 77);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.example-text p::first-line {
+  letter-spacing: 3px;
+}
+
+.list-style ul {
+  list-style-type: circle;
+}
+
+.background h1 {
+  padding: 2em;
+  background-color: rgb(145, 108, 180);
+}
+
+.background .container {
+  background: url(https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000);
+  background-position: center;
+}
+
+.background ul {
+  padding: 2em;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZhfxxnRCgOD28EWhsk6b2cciU9kJNfDdEOA&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.display .title {
+  text-align: center;
+  background-color: rgb(219, 202, 51);
+  padding: 1em;
+}
+
+.float-none {
+  width: 32px;
+  height: 32px;
+  padding: 2em;
+  background-color: rgb(255, 196, 0);
+  border: #000 solid;
+  float: none;
+}
+
+.float-left {
+  width: 6em;
+  height: 6em;
+  background-color: rgb(255, 196, 0);
+  border: #000 solid;
+  float: left;
+  margin: 0 0.5em 0 0;
+}
+
+.float-right {
+  width: 6em;
+  height: 6em;
+  background-color: rgb(255, 196, 0);
+  border: #000 solid;
+  float: right;
+  margin: 0 0.5em 0 0;
+}
+
+.box1 {
+  border: #000 solid;
+  margin: 1.5em;
+}
+
+.box2 {
+  border: solid;
+  border-color: crimson;
+  margin: 1.5em;
+}
+
+.box3 {
+  border: solid;
+  border-color: rgb(54, 112, 16);
+  padding: 40px;
+  margin: 1.5em;
+  border-width: 5px;
+}
+
+.box4 {
+  border: solid;
+  border-color: crimson;
+  padding: 40px;
+  margin: 1.5em;
+  border-width: 3px;
+  border-radius: 0px 30px;
+}

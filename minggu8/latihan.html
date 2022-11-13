@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latihan CSS</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="text">
+      <div class="container">
+        <div class="header">
+          <h1>Text Styling</h1>
+          <p>based on css cheatsheet</p>
+          <hr />
+        </div>
+
+        <div class="content">
+          <div class="color">
+            <p class="title">Text Color - color : <span> palevioletred </span></p>
+          </div>
+
+          <div class="font-family">
+            <p class="title">Text Font - font-family : <span>'Poppins' , sans-serif</span></p>
+          </div>
+
+          <div class="font-size">
+            <p class="title">
+              Text Size - font-size : 
+              <ul>
+                <li class="px">
+                    <b>Pixel</b> - <span>this text is 20px</span> 
+                </li>
+                <li class="percent">
+                   <b>Percent</b>  - <span>this text is 100% = 16px (default)</span> 
+                </li>
+                <li class="em">
+                    <b>Em&Rem</b> - <span>this text is 1em = 1rem = 100%</span>  
+                </li>
+              </ul>
+            </p>
+
+            <div class="font-style">
+              <p class="title">
+                Text Style - font-style :
+              </p>
+              <ul>
+                <li>
+                  normal
+                </li>
+                <li class="italic">
+                  italic
+                </li>
+                <li class="oblique">
+                  oblique
+                </li>
+                <li class="oblique2">
+                  oblique + angle
+                </li>
+              </ul>
+            </div>
+
+            <div class="font-weight">
+                <p class="title">Text Weight - font-weight
+                    <ul>
+                        <li class="normal">
+                            <b>Normal</b> - <span>this text normal</span> 
+                        </li>
+                        <li class="bold">
+                           <b>Bold</b>  - <span>this text is bold</span> 
+                        </li>
+                        <li class="lighter">
+                            <b>Lighter</b> - <span>this text is lighter</span>  
+                        </li>
+                        <li class="bolder">
+                            <b>Bolder</b> - <span>this text is bolder</span>  
+                        </li>
+                        <li class="number">
+                            <b>Number</b> - <span>this text is 900 (bold)</span>  
+                        </li>
+                      </ul>
+                </p>
+            </div>
+
+            <div class="font-variant">
+              <p class="title">Text Variant - font-variant</p>
+              <ul>
+                <li class="normal">
+                  normal
+                </li>
+                <li class="small-caps">
+                  small-caps
+                </li>
+              </ul>
+            </div>
+
+            <div class="letter-spacing">
+                <p class="title">Letter Spacing - letter-spacing</p>
+                <ul>
+                    <li class="normal">
+                        <b>Normal</b> - <span>this text normal</span> 
+                    </li>
+                    <li class="wide">
+                       <b>Wide</b>  - <span>this text is 0.4em</span> 
+                    </li>
+                    <li class="wider">
+                        <b>Wider</b> - <span>this text is 1em</span>  
+                    </li>
+                    <li class="tight">
+                        <b>Tight</b> - <span>this text is -0.05em </span>  
+                    </li>
+                    <li class="px-wide">
+                        <b>Wide px</b> - <span>this text is 6px</span>  
+                    </li>
+                  </ul>
+            </div>
+
+            <div class="line-height">
+                <p class="title">Line Height - Line Height</p>
+                <p class="text">(32px) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius esse quibusdam corrupti accusantium animi, culpa perferendis voluptatum odit? Debitis veniam ad repudiandae id maiores tempora, repellendus harum non at quia!</p>
+            </div>
+
+            <div class="text-align">
+                <p class="title">Text Align - text-align : </p>
+                  <p>| start |
+                    end | left | right | center |  justify | match-parent |</p> 
+            </div>
+
+            <div class="text-decoration">
+              <p class="title">Text Decoration - text-decoration : </p>
+              <ul>
+              <li class="under">This text has a line underneath it.</li>
+              <li class="over">This text has a line over it.</li>
+              <li class="line">This text has a line going through it.</li>
+              <li>
+                This <a class="plain" href="#">link will not be underlined</a>, as links
+                generally are by default. Be careful when removing the text decoration on
+                anchors since users often depend on the underline to denote hyperlinks.
+              </li>
+              <li class="underover">This text has lines above <em>and</em> below it.</li>
+              <li class="thick">
+                This text has a really thick purple underline in supporting browsers.
+              </li>
+              <li class="blink">
+                This text might blink for you, depending on the browser you use.
+              </li>
+              </ul>
+            </div>
+
+            <div class="text-transform">
+              <p class="title">Text Transform - text-transform</p>
+              <ul>
+                <li class="none"> 
+                  none - Is a keyword that prevents the case of all characters from being changed.
+                  </li>
+                <li class="capitalize">
+                  capitalize - Is a keyword that converts the first letter of each word to uppercase.
+                </li>
+                <li class="uppercase">
+                  uppercase - Is that converts all characters to uppercase.
+                </li>
+                <li class="lowercase">
+                  lowercase - Is a keyword that converts all characters to lowercase.
+                </li>
+                <li class="full-width">
+                  full-width - Is a keyword that forces the writing of a character — mainly ideograms and Latin scripts — inside a square, allowing them to be aligned in the usual East Asian scripts (like Chinese or Japanese).
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-shadow">
+              <p class="title">Text Shadow - text-shadow</p>
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsum cupiditate laudantium doloribus libero. Beatae iusto distinctio unde at odio sapiente voluptatibus? Reiciendis facere corrupti odio deserunt harum voluptas blanditiis?</span>
+              <h3>Lorem, ipsum.</h3>
+            </div>
+
+            <div class="text-indent">
+              <p class="title">Text Indent - text-indent</p>
+              <p class="indent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsum cupiditate laudantium doloribus libero. Beatae iusto distinctio unde at odio sapiente voluptatibus? Reiciendis facere corrupti odio deserunt harum voluptas blanditiis?</p>
+            </div>
+
+            <div class="text-overflow">
+              <p class="title">Text Overflow - text-overflow</p>
+              <p>ellipsis</p>
+              <p class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet voluptatem sed illo placeat architecto dicta eos, quibusdam quis quasi voluptate laudantium aliquid itaque in libero doloribus fuga similique, tempore vero?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="example-text">
+      <div class="container">
+        <h1>tommy the cat</h1>
+        <p>Well I remember it as though it were a meal ago…</p>
+        <p>Said Tommy the Cat as he reeled back to clear whatever foreign matter may have nestled its way into his mighty throat. Many a fat alley rat had met its demise while staring point blank down the cavernous barrel of this awesome prowling machine. Truly a wonder of nature this urban predator — Tommy the cat had many a story to tell. But it was a rare occasion such as this that he did.</p>
+      </div>
+    </section>
+
+    <section class="list">
+      <div class="container">
+        <div class="header">
+          <h1>List Styling</h1>
+          <p>based on css cheatsheet</p>
+          <hr />
+        </div>
+
+        <div class="list-style">
+          <div class="title">
+            list-style-type :
+          </div>
+          <ul>
+            <li>list-style</li>
+            <li>list-style-image</li>
+            <li>list-style-position</li>
+            <li>list-style-type</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="background">
+      <div class="container">
+        <div class="header">
+          <h1>background</h1>
+        </div>
+        <ul>
+          <li>background</li>
+          <li>background-attachment</li>
+          <li>background-color</li>
+          <li>background-image</li>
+          <li>background-position</li>
+          <li>background-repeat</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="display">
+      <div class="container">
+        <div class="header">
+          <h1>display</h1>
+          <hr>
+        </div>
+
+            <details>
+            <summary>display</summary>
+            <ul>
+              <li>block</li>
+              <li>inline</li>
+              <li>inline-block</li>
+              <li>flex</li>
+              <li>inline-flex</li>
+              <li>grid</li>
+              <li>inline-grid</li>
+              <li>flow-root</li>
+              <li>list-item</li>
+              <li>none</li>
+            </ul>
+          </details>
+
+          
+          <h1 class="title">float</h1>
+           <ul>
+            <li><h3>float-none</h3>
+            <p class="float-none">float</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel consequuntur voluptate temporibus expedita ad quidem.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel consequuntur voluptate temporibus expedita ad quidem.</p></li>
+
+            <li><h3>float-left</h3>
+            <p class="float-left">float</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel consequuntur voluptate temporibus expedita ad quidem.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel consequuntur voluptate temporibus expedita ad quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus architecto blanditiis error veritatis est, in, repudiandae voluptate laudantium labore maxime, harum quibusdam laboriosam? Aut suscipit natus illo accusamus eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel aspernatur, labore fuga minus numquam explicabo officiis ullam. Ratione eos temporibus consequatur commodi voluptate quisquam atque eum, tempore id minima nesciunt.</p></li>
+
+            <li><h3>float-right</h3>
+            <p class="float-right">float</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel consequuntur voluptate temporibus expedita ad quidem.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel consequuntur voluptate temporibus expedita ad quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus architecto blanditiis error veritatis est, in, repudiandae voluptate laudantium labore maxime, harum quibusdam laboriosam? Aut suscipit natus illo accusamus eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel aspernatur, labore fuga minus numquam explicabo officiis ullam. Ratione eos temporibus consequatur commodi voluptate quisquam atque eum, tempore id minima nesciunt.</p></li>
+
+            <li><h3>inline-start</h3></li>
+            <li><h3>inline-end</h3></li>
+          </ul>
+
+          <details>
+            <summary>clear</summary>
+            <ul>
+              <li>none</li>
+              <li>left</li>
+              <li>right</li>
+              <li>both</li>
+              <li>inline-start</li>
+              <li> inline-end</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>overflow</summary>
+            <ul>
+              <li>visible</li>
+              <li>hidden</li>
+              <li>scroll</li>
+              <li>auto</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>visibility</summary>
+            <ul>
+              <li>visible</li>
+              <li>hidden</li>
+              <li>collapse</li>
+            </ul>
+          </details>
+      </div>
+    </section>
+
+    <section class="box-section">
+      <div class="container">
+        <div class="header">
+          <h1>Box</h1> <hr>
+        </div>
+
+        <div class="box1">border</div>
+
+        <div class="box2">border-color</div>
+
+        <div class="box3">border-width = 5px
+        </div>
+
+        <div class="box4">border-radius</div>
+      </div>
+    </section>
+  </body>
+</html>
