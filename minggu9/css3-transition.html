@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3 - Transform</title>
+    <style>
+      body {
+        background-color: rgb(235, 153, 123);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 5rem 8rem;
+      }
+      h1 {
+        color: rgb(99, 27, 27);
+        text-align: center;
+      }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      .kotak {
+        padding: 2rem;
+        text-align: center;
+        font-size: 1rem;
+        float: left;
+        display: flex;
+        align-items: center;
+        background-color: rgb(190, 82, 82);
+      }
+      .kotak1 {
+        width: 10em;
+        height: 10em;
+        transition: width 0.5s;
+        -webkit-transition: width 0.5s;
+      }
+      .kotak1:hover {
+        width: 15em;
+      }
+      .kotak2 {
+        width: 10em;
+        height: 10em;
+        transition: width 1s, height 1s;
+        -webkit-transition: width 1s, height 1s;
+      }
+      .kotak2:hover {
+        width: 13em;
+        height: 13em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Translate</h1>
+    <ul>
+      <li>
+        Transition
+        <p>
+          Perintah standar transisi css3, biasanya digunakan untuk memanipulasi
+          property atau nilai value css dengan sangat baik.
+        </p>
+      </li>
+      <li>
+        Transition-delay
+        <p>
+          digunakan untuk memberikan waktu tunda pada saat pengeksekusian sebuah
+          efek css3
+        </p>
+      </li>
+      <li>
+        Transition-duration
+        <p>
+          digunakan untuuk memberikan waktu durasi terhadap sebuah efek yang
+          dibuat dengan css3.
+        </p>
+      </li>
+      <li>
+        Transition-property
+        <p>
+          untuk menentukan property css yang akan di gunakan,manipulasi atau
+          lainnya(di pilih).
+        </p>
+      </li>
+      <li>
+        Transition-timing-function
+        <p>untuk menentukan kecepatan sebuah efek yang dibuat dengan css3.</p>
+      </li>
+    </ul>
+    <div class="center">
+      <div class="kotak kotak1">
+        kotak ini tidak di berikan transition width 0.5s hover
+      </div>
+      <div class="kotak kotak2">
+        kotak ini tidak di berikan transition width & height 1s hover
+      </div>
+    </div>
+  </body>
+</html>

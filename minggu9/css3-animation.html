@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3 - Transform</title>
+    <style>
+      body {
+        background-color: rgb(235, 153, 123);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 5rem 8rem;
+      }
+      h1 {
+        color: rgb(99, 27, 27);
+        text-align: center;
+      }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      .kotak {
+        width: 10rem;
+        height: 10rem;
+        padding: 3rem;
+        text-align: center;
+        font-size: 1rem;
+        float: left;
+        display: flex;
+        align-items: center;
+        background-color: rgb(190, 82, 82);
+        animation-name: animasi_kotak;
+        animation-duration: 2s;
+      }
+      @keyframes animasi_kotak {
+        from {
+          background: rgb(190, 82, 82);
+        }
+        to {
+          background: rgb(0, 153, 255);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Animasi</h1>
+    <p>
+      @keyframes adalah fungsi baru dari css3 untuk membuat animasi. ada banyak
+      kelebihan menggunakan css untuk membuat animasi.
+    </p>
+    <div class="center">
+      <div class="kotak">Contoh penggunaan @keyframe</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>>Warna gradient dengan css3</title>
+    <style>
+      body {
+        background-color: rgb(235, 153, 123);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        color: rgb(99, 27, 27);
+      }
+      .center {
+        margin: 10px auto;
+        width: 1150px;
+      }
+      .kotak {
+        background-color: aliceblue;
+        width: 500px;
+        height: 250px;
+        float: left;
+        margin: 30px;
+      }
+      .gradient1 {
+        border-radius: 10px;
+        /* Standard syntax */
+        background: linear-gradient(
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699)
+        );
+        /*  For Safari 5.1 to 6.0 */
+        background: -webkit-linear-gradient(
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699)
+        );
+        /*For Opera 11.1 to 12.0  */
+        background: -o-linear-gradient(
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699)
+        );
+        /*  For Firefox 3.6 to 15 */
+        background: -moz-linear-gradient(
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699)
+        );
+      }
+      .gradient2 {
+        border-radius: 10px;
+        /* Standard syntax */
+        background: linear-gradient(
+          to right,
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+        /*  For Safari 5.1 to 6.0 */
+        background: -webkit-linear-gradient(
+          left,
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+        /*For Opera 11.1 to 12.0  */
+        background: -o-linear-gradient(
+          right,
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+        /*  For Firefox 3.6 to 15 */
+        background: -moz-linear-gradient(
+          right,
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+      }
+      .gradient3 {
+        border-radius: 10px;
+        /* Standard syntax */
+        background: radial-gradient(
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+        /*  For Safari 5.1 to 6.0 */
+        background: -webkit-radial-gradient(
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+        /*For Opera 11.1 to 12.0  */
+        background: -o-radial-gradient(
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+        /*  For Firefox 3.6 to 15 */
+        background: -moz-radial-linear-gradient(
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+      }
+      .gradient4 {
+        border-radius: 10px;
+        /* Standard syntax */
+        background: radial-gradient(
+          circle,
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+        /*  For Safari 5.1 to 6.0 */
+        background: -webkit-radial-gradient(
+          circle,
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+        /*For Opera 11.1 to 12.0  */
+        background: -o-radial-gradient(
+          circle,
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+        /*  For Firefox 3.6 to 15 */
+        background: -moz-radial-linear-gradient(
+          circle,
+          rgb(254, 255, 255),
+          rgba(223, 11, 75, 0.699),
+          rgb(27, 29, 187)
+        );
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Warna gradient dengan css3</h1>
+    <div class="center">
+      <!-- linear vertikal -->
+      <div class="kotak gradient1">linear vertikal</div>
+      <!-- linear horizontal -->
+      <div class="kotak gradient2">linear horizontal</div>
+      <!-- radial -->
+      <div class="kotak gradient3">radial</div>
+      <!-- radial circle -->
+      <div class="kotak gradient4">radial circle</div>
+    </div>
+  </body>
+</html>

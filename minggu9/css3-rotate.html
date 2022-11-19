@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3 - Transform</title>
+    <style>
+      body {
+        background-color: rgb(235, 153, 123);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin: 0 8rem;
+      }
+      h1 {
+        color: rgb(99, 27, 27);
+      }
+      h2 {
+        background-color: rgb(202, 132, 107);
+        margin: 0 200px;
+      }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      .kotak {
+        border: 1px solid;
+        width: 10em;
+        height: 10em;
+        font-size: 1rem;
+        float: left;
+        display: flex;
+        align-items: center;
+      }
+      .kotak2 {
+        -ms-transform: rotate(30deg); /* Support IE 9 */
+        -webkit-transform: rotate(30deg); /* support Safari */
+        transform: rotate(30deg); /* Standard syntax */
+      }
+      .kotak3 {
+        -ms-transform: rotate(90deg); /* Support IE 9 */
+        -webkit-transform: rotate(90deg); /* support Safari */
+        transform: rotate(90deg); /* Standard syntax */
+      }
+      .kotak4 {
+        -ms-transform: rotate(-60deg); /* Support IE 9 */
+        -webkit-transform: rotate(-60deg); /* support Safari */
+        transform: rotate(-60deg); /* Standard syntax */
+      }
+      .kotak5 {
+        -ms-transform: rotate(120deg); /* Support IE 9 */
+        -webkit-transform: rotate(120deg); /* support Safari */
+        transform: rotate(120deg); /* Standard syntax */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Rotate</h1>
+    <p>
+      rotate() adalah fungsi yang bisa digunakan untuk memutar sebuah element.
+      untuk memutar elemenya bisa menentukan nilainya di dalam parameter fungsi
+      rotate ini. untuk nilainya sendiri bisa ditentukan dengan cara memberikan
+      nilai derajat putar nya.
+    </p>
+    <br />
+    <div class="center">
+      <div class="kotak kotak1">kotak ini tidak di berikan method rotate.</div>
+      <div class="kotak kotak2">30deg</div>
+      <div class="kotak kotak3">90deg</div>
+      <div class="kotak kotak4">-60deg</div>
+      <div class="kotak kotak5">120deg</div>
+    </div>
+  </body>
+</html>

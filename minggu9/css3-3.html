@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Membuat Efek Bayangan Dengan CSS3</title>
+    <style>
+      body {
+        background-color: rgb(235, 153, 123);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        color: rgb(99, 27, 27);
+      }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .kotak {
+        background-color: aliceblue;
+        width: 10em;
+        height: 10em;
+        float: left;
+        margin: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+      }
+      /* tinggi rendah bayangan, rata kiri kanan bayangan, radius bayangan, ketebalan bayangan, warna */
+      .kotak1 {
+        box-shadow: 0 0 10px 10px #3333;
+      }
+      .kotak2 {
+        box-shadow: 20px 20px 40px 1px rgb(70, 30, 30);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Membuat Efek Bayangan Dengan CSS3</h1>
+    <!-- (kiri atas) (kanan atas) (kanan bawah) (kiri bawah) -->
+    <div class="center">
+      <div class="kotak tulisan1">Hello</div>
+      <div class="kotak tulisan2">World</div>
+      <div class="kotak kotak1">kotak 1</div>
+      <div class="kotak kotak2">kotak 2</div>
+    </div>
+  </body>
+</html>

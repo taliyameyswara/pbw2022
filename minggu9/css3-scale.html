@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3 - Transform</title>
+    <style>
+      body {
+        background-color: rgb(235, 153, 123);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin: 0 8rem;
+      }
+      h1 {
+        color: rgb(99, 27, 27);
+      }
+      h2 {
+        background-color: rgb(202, 132, 107);
+        margin: 0 200px;
+      }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+      }
+      .kotak {
+        margin-top: 5rem;
+        border: 1px solid;
+        width: 10em;
+        height: 10em;
+        font-size: 1rem;
+        float: left;
+        display: flex;
+        align-items: center;
+      }
+      .kotak2 {
+        /* -ms-transform: scale(2, 3); /* Support IE 9 
+        -webkit-transform: scale(2, 3); /* support Safari */
+        transform: scale(2, 1.5); /* Standard syntax */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Scale</h1>
+    <p>
+      fungsi method scale() ini di gunakan untuk melebarkan atau menjauhkan
+      element dengan menambah atau mengurangi ukuran element. seperi effect zoom
+      lah kira-kiranya.
+    </p>
+    <br />
+    <div class="center">
+      <div class="kotak kotak1">kotak ini tidak di berikan method scale</div>
+      <div class="kotak kotak2">ini contoh fungsi scale() CSS Transform.</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belajar Semantic Element">
+    <meta name="keywords" content="HTML, TAG, Elemen">
+    <meta name="author" content="Taliya Meyswara">
+    <title>CSS GRID</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        header{
+            border: 1px solid green;
+            padding: 20px;
+        }
+
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col"]{
+            float: left;
+            padding: 15px;
+            border:  1px solid green;
+        }
+
+        .col1{width: 8.33%;}
+        .col2{width: 16.66%;}
+        .col3{width: 25%;}
+        .col4{width: 33.33%;}
+        .col5{width: 41.66%;}
+        .col6{width: 50%;}
+        .col7{width: 58.33%;}
+        .col8{width: 66.66%;}
+        .col9{width: 75%;}
+        .col10{width:83.33%;}
+        .col11{width: 91.66%}
+        .col12{width:100%}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Judul halaman</h1>
+    </header>
+
+    <main class="row">
+        <nav class="col3">
+            <aside>
+                <ul>
+                    <li>Article</li>
+                    <li>Footer</li>
+                </ul>
+            </aside>
+        </nav>
+
+        <article class="col9">
+            <h1>Article</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Eveniet similique voluptatem itaque? Laborum quam molestiae totam. 
+            Aut dolores, delectus maiores porro corporis debitis nisi quam ipsa itaque animi, sunt ipsam.</p>
+            <div class="col6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur voluptate quasi velit possimus atque labore ab. Eius, blanditiis perferendis, placeat tenetur explicabo eum nam omnis asperiores quisquam animi enim!</div>
+            <div class="col6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam nostrum quam! Labore dolorum aspernatur perferendis, voluptatem illum, sequi provident quaerat recusandae pariatur vitae optio nesciunt at! Nulla, distinctio nobis?</div>
+        </article>
+    </main>
+    <footer class="col12">
+        Copyright &copy; 2022 by Taliya Meyswara
+    </footer>
+
+</body>
+</html>
